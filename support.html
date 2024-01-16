@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>صفحة المساعدة</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="support.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body dir="rtl">
+<div class="container mt-5">
+    <form action="support.php" method="post" enctype="multipart/form-data">
+        <div class="form-container">
+            <h2 class="text-center mb-4">نموذج المساعدة</h2>
+            <div class="form-group">
+                <label for="name">الاسم:</label>
+                <input type="text" class="form-control mb-2" id="name" name="name" placeholder="الاسم" required>
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" class="form-control mb-2" id="email" name="email" placeholder="البريد الإلكتروني" required>
+            </div>
+            <div class="form-group">
+                <label for="message">الرسالة:</label>
+                <textarea class="form-control mb-2" id="message" name="message" placeholder="الرسالة" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="type">نوع الاستفسار:</label>
+                <select class="form-control mb-2" id="type" name="type">
+                    <option value="شكوى">شكوى</option>
+                    <option value="اقتراح">اقتراح</option>
+                    <option value="استفسار">استفسار</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="custom-file">
+                    <input type="file" id="attachment" name="attachment" style="display:none;" required>
+                    <label for="attachment"   class="btn btn-outline-primary">اختر ملف</label>
+                </div>
+            </div>
+            <div class="text-center">
+                <input type="submit" class="btn btn-primary btn-lg" value="إرسال">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

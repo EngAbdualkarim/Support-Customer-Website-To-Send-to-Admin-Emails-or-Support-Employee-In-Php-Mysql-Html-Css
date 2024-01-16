@@ -1,0 +1,33 @@
+body {
+    padding: 20px;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group label {
+    font-weight: bold;
+    float: right;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea,
+.form-group select {
+    text-align: right;
+}
+.form-group ::placeholder {
+    text-align: right;
+}
+.form-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px silver;
+}
+.custom-file-label::after {
+    text-align: right;
+}
